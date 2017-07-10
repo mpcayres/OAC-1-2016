@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\mp_ca\Desktop\Marcos Paulo\UnB\OAC\Trabalho 5\simulation\modelsim
+Ebregmips
+Z1 w1465070185
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\mp_ca\Desktop\Marcos Paulo\UnB\OAC\Trabalho 5\simulation\modelsim
+Z6 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 5/bregMIPS.vhd
+Z7 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 5/bregMIPS.vhd
+l0
+L5
+V]ZRM;1;7n?_oN[b5gg2?h3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1465070272.316000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 5/bregMIPS.vhd|
+Z11 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 5/bregMIPS.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 ;RI98S9Kf?2J9IJYWP_GQ3
+!i10b 1
+Abregarch
+R2
+R3
+R4
+DEx4 work 8 bregmips 0 22 ]ZRM;1;7n?_oN[b5gg2?h3
+l19
+L14
+VJi=SLSGRFnWFWMe?`2KTA1
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 md8ejBUIQ?IFlmf5U8^K32
+!i10b 1
+Ebregmips_tb
+Z14 w1465070182
+R3
+R4
+R5
+Z15 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 5/simulation/modelsim/bregMIPS_tb.vhd
+Z16 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 5/simulation/modelsim/bregMIPS_tb.vhd
+l0
+L30
+Vb5LE>XlR>j2gMK0I7n7Zi1
+!s100 zjB1e][SC49hz:J`0]zhd1
+R8
+31
+!i10b 1
+Z17 !s108 1465070272.565000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 5/simulation/modelsim/bregMIPS_tb.vhd|
+Z19 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 5/simulation/modelsim/bregMIPS_tb.vhd|
+R12
+R13
+Abregmips_tbarch
+R3
+R4
+DEx4 work 11 bregmips_tb 0 22 b5LE>XlR>j2gMK0I7n7Zi1
+l55
+L32
+VeYE[zbZ`7?W3N>YGT6_cS3
+!s100 PBiB0z`NFdb@MhnZ?BX@A2
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

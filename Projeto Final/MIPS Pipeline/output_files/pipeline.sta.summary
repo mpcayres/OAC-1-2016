@@ -1,0 +1,45 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clkIN'
+Slack : -16.144
+TNS   : -12580.573
+
+Type  : Slow Model Hold 'clkIN'
+Slack : -3.205
+TNS   : -181.435
+
+Type  : Slow Model Recovery 'clkIN'
+Slack : -6.505
+TNS   : -6.505
+
+Type  : Slow Model Removal 'clkIN'
+Slack : 6.561
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clkIN'
+Slack : -2.363
+TNS   : -2095.544
+
+Type  : Fast Model Setup 'clkIN'
+Slack : -7.164
+TNS   : -5860.079
+
+Type  : Fast Model Hold 'clkIN'
+Slack : -1.549
+TNS   : -87.948
+
+Type  : Fast Model Recovery 'clkIN'
+Slack : -3.139
+TNS   : -3.139
+
+Type  : Fast Model Removal 'clkIN'
+Slack : 3.624
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clkIN'
+Slack : -2.215
+TNS   : -1994.016
+
+------------------------------------------------------------

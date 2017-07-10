@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="pipeline">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tl71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_lnc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,526 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do pipeline_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bin_7seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bin_7seg
+# -- Compiling architecture decodificador of bin_7seg
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MUX_2
+# -- Compiling architecture MUXarc of MUX_2
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ShiftLeft.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftLeft
+# -- Compiling architecture ShiftLeftarc of ShiftLeft
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/pipeline.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pipeline
+# -- Compiling architecture pipelineArc of pipeline
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemDad.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemDad
+# -- Compiling architecture SYN of memdad
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/PC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PC
+# -- Compiling architecture PCarc of PC
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bregMIPS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity bregMIPS
+# -- Compiling architecture bregArch of bregMIPS
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/SOM.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SOM
+# -- Compiling architecture SOMArch of SOM
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaMIPS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ulaMIPS
+# -- Compiling architecture ulaExec of ulaMIPS
+# ** Warning: C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaMIPS.vhd(66): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/sign_ext.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sign_ext
+# -- Compiling architecture sign_ext_arch of sign_ext
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/CONTROL.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CONTROL
+# -- Compiling architecture control_op of CONTROL
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaCONTROL.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ulaCONTROL
+# -- Compiling architecture behav of ulaCONTROL
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_5bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MUX_5bits
+# -- Compiling architecture MUXarc of MUX_5bits
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/FETCH.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FETCH
+# -- Compiling architecture fetchArc of FETCH
+# ** Warning: C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/FETCH.vhd(68): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/DECODE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DECODE
+# -- Compiling architecture decodeArc of DECODE
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EXECUTE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity EXECUTE
+# -- Compiling architecture executeArc of EXECUTE
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEMDADOS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MEMDADOS
+# -- Compiling architecture memArc of MEMDADOS
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/IF_ID.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity IF_ID
+# -- Compiling architecture if_idArc of IF_ID
+# ** Warning: C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/IF_ID.vhd(22): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# 
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ID_EX.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ID_EX
+# -- Compiling architecture id_exArc of ID_EX
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EX_MEM.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity EX_MEM
+# -- Compiling architecture ex_memArc of EX_MEM
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEM_WB.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MEM_WB
+# -- Compiling architecture mem_wbArc of MEM_WB
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/WRITEBACK.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity WRITEBACK
+# -- Compiling architecture wbArc of WRITEBACK
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemInst.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MemInst
+# -- Compiling architecture SYN of meminst
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_6.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MUX_6
+# -- Compiling architecture MUXarc of MUX_6
+# 
+# vcom -93 -work work {C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/simulation/modelsim/pipeline_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pipeline_tb
+# -- Compiling architecture pipeline_arch of pipeline_tb
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  pipeline_tb
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps pipeline_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pipeline_tb(pipeline_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.pipeline(pipelinearc)
+# Loading work.fetch(fetcharc)
+# Loading work.mux_2(muxarc)
+# Loading work.pc(pcarc)
+# Loading work.som(somarch)
+# Loading work.meminst(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+# Loading work.if_id(if_idarc)
+# Loading work.decode(decodearc)
+# Loading work.control(control_op)
+# Loading work.ulacontrol(behav)
+# Loading work.bregmips(bregarch)
+# Loading work.sign_ext(sign_ext_arch)
+# Loading work.shiftleft(shiftleftarc)
+# Loading work.id_ex(id_exarc)
+# Loading work.execute(executearc)
+# Loading work.ulamips(ulaexec)
+# Loading work.mux_5bits(muxarc)
+# Loading work.ex_mem(ex_memarc)
+# Loading work.memdados(memarc)
+# Loading work.memdad(syn)
+# Loading work.mem_wb(mem_wbarc)
+# Loading work.writeback(wbarc)
+# Loading work.mux_6(muxarc)
+# Loading work.bin_7seg(decodificador)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: mp_ca  Hostname: LAPTOP-EQR5CSD4  ProcessID: 19988
+# 
+#           Attempting to use alternate WLF file "./wlfttaw04k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfttaw04k
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/i1/PIP2/BREG
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipeline_tb/i1/PIP2/BREG
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP3/ULA
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 20 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 20 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 20 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 20 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 20 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 40 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 40 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 40 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 40 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 40 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 40 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 40 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 40 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 310 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 310 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 310 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 310 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 310 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 310 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 320 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 320 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 320 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 320 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 320 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 320 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 320 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 320 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 410 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 410 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 410 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 410 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 410 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 410 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 420 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 420 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 420 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 420 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 420 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 420 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 420 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 420 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 450 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 450 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 450 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 450 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 460 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 460 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 460 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 460 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 460 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 460 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 460 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 460 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 510 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 510 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 510 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 510 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 510 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 510 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 520 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 520 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 520 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 520 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 520 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 520 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 520 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 520 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 550 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 550 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 550 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 550 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 550 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 550 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 560 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 560 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 560 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 560 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 560 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 560 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 560 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 560 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 650 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 650 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 650 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 650 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 650 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 650 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 660 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 660 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 660 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 660 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 660 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 660 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 660 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 660 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 710 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 710 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 710 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 710 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 710 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 710 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 720 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 720 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 720 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 720 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 720 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 720 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 720 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 720 ns  Iteration: 4  Instance: /pipeline_tb/i1/PIP4/MEM_DADO/altsyncram_component

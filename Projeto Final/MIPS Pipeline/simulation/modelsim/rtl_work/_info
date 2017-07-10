@@ -1,0 +1,922 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\mp_ca\Desktop\Marcos Paulo\UnB\OAC\Projeto Final\Ingrid_Marcos\MIPS Pipeline\simulation\modelsim
+Ebin_7seg
+Z1 w1467725194
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\mp_ca\Desktop\Marcos Paulo\UnB\OAC\Projeto Final\Ingrid_Marcos\MIPS Pipeline\simulation\modelsim
+Z5 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bin_7seg.vhd
+Z6 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bin_7seg.vhd
+l0
+L4
+Vag@KjfL96mJjWm[Gzhok_3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1467849892.109000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bin_7seg.vhd|
+Z10 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bin_7seg.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 b@n=A[7bhgfoA6fPPE0N_3
+!i10b 1
+Adecodificador
+R2
+R3
+DEx4 work 8 bin_7seg 0 22 ag@KjfL96mJjWm[Gzhok_3
+l12
+L11
+V^ioR@C;cn_^b3hj8oi2`j2
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 H0?ce=K8M^AZ?I69N5k@M3
+!i10b 1
+Ebregmips
+Z13 w1467848915
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z15 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bregMIPS.vhd
+Z16 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bregMIPS.vhd
+l0
+L6
+V=X_ZTX=?QPi1IfKfOcaeN2
+R7
+31
+Z17 !s108 1467849893.325000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bregMIPS.vhd|
+Z19 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bregMIPS.vhd|
+R11
+R12
+!s100 <4K^C7F:cEObYzCf0B7W^2
+!i10b 1
+Abregarch
+R14
+R2
+R3
+DEx4 work 8 bregmips 0 22 =X_ZTX=?QPi1IfKfOcaeN2
+l23
+L16
+VEo6:=QIe6;AD2?4ZFd;O93
+R7
+31
+R17
+R18
+R19
+R11
+R12
+!s100 bIGB@C[h:hJn:_KU;^ka60
+!i10b 1
+Econtrol
+Z20 w1467847744
+R14
+R2
+R3
+R4
+Z21 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/CONTROL.vhd
+Z22 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/CONTROL.vhd
+l0
+L6
+VX6TLDLH_jD5UPOj?g]AYO2
+R7
+31
+Z23 !s108 1467849894.316000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/CONTROL.vhd|
+Z25 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/CONTROL.vhd|
+R11
+R12
+!s100 Sh]n>7VWle<nZGIaG?LTQ0
+!i10b 1
+Acontrol_op
+R14
+R2
+R3
+DEx4 work 7 control 0 22 X6TLDLH_jD5UPOj?g]AYO2
+l49
+L29
+V02aUgHQBOWK_JZ9eNLi<?0
+R7
+31
+R23
+R24
+R25
+R11
+R12
+!s100 2_L2PRcYfki2gK64A1n^T1
+!i10b 1
+Edecode
+Z26 w1467847997
+R14
+R2
+R3
+R4
+Z27 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/DECODE.vhd
+Z28 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/DECODE.vhd
+l0
+L6
+V7O90jDcCQIln5;L57UGEF0
+R7
+31
+Z29 !s108 1467849895.224000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/DECODE.vhd|
+Z31 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/DECODE.vhd|
+R11
+R12
+!s100 5PA]OeAmSF4gioCkEgb5R3
+!i10b 1
+Adecodearc
+R14
+R2
+R3
+DEx4 work 6 decode 0 22 7O90jDcCQIln5;L57UGEF0
+l141
+L29
+VdEkzG:1X9MQd^z5X56T[z2
+R7
+31
+R29
+R30
+R31
+R11
+R12
+!s100 k@4X<V;g`L<29^Zb5C0Pl1
+!i10b 1
+Eex_mem
+Z32 w1467407700
+R14
+R2
+R3
+R4
+Z33 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EX_MEM.vhd
+Z34 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EX_MEM.vhd
+l0
+L6
+VUhGIdS<0<c10F5h7MCjFd2
+R7
+31
+Z35 !s108 1467849896.349000
+Z36 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EX_MEM.vhd|
+Z37 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EX_MEM.vhd|
+R11
+R12
+!s100 FY[aCF7R^Q=08NHM@o;0f1
+!i10b 1
+Aex_memarc
+R14
+R2
+R3
+DEx4 work 6 ex_mem 0 22 UhGIdS<0<c10F5h7MCjFd2
+l20
+L19
+Vj6YP8?9ITmERiK==4=nDZ3
+R7
+31
+R35
+R36
+R37
+R11
+R12
+!s100 T_fkAWUV3>7Ef0ETh4M]]0
+!i10b 1
+Eexecute
+Z38 w1467847996
+R14
+R2
+R3
+R4
+Z39 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EXECUTE.vhd
+Z40 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EXECUTE.vhd
+l0
+L6
+VTICJAIaIGMKoZ^i2a?JH[1
+R7
+31
+Z41 !s108 1467849895.388000
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EXECUTE.vhd|
+Z43 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EXECUTE.vhd|
+R11
+R12
+!s100 bO4G2c@@Oi1WXFE:liCfE3
+!i10b 1
+Aexecutearc
+R14
+R2
+R3
+DEx4 work 7 execute 0 22 TICJAIaIGMKoZ^i2a?JH[1
+l74
+L22
+VjMaa`X`M5eZg8R==ZWGlT0
+R7
+31
+R41
+R42
+R43
+R11
+R12
+!s100 kC89a^5CjE`oMT3lNH6M91
+!i10b 1
+Efetch
+Z44 w1467848018
+R14
+R2
+R3
+R4
+Z45 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/FETCH.vhd
+Z46 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/FETCH.vhd
+l0
+L6
+VbZTEf8ENYO_[HUlSB>[5Q1
+R7
+31
+Z47 !s108 1467849895.066000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/FETCH.vhd|
+Z49 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/FETCH.vhd|
+R11
+R12
+!s100 3984gJfVRg]<EDGm[D4Mj0
+!i10b 1
+Afetcharc
+R14
+R2
+R3
+DEx4 work 5 fetch 0 22 bZTEf8ENYO_[HUlSB>[5Q1
+l61
+L17
+V4GEH<jFVf>gWXN`A3F;b^1
+R7
+31
+R47
+R48
+R49
+R11
+R12
+!s100 EbUUdoQ<=@d06d=2ezdFW0
+!i10b 1
+Eid_ex
+Z50 w1467642040
+R14
+R2
+R3
+R4
+Z51 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ID_EX.vhd
+Z52 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ID_EX.vhd
+l0
+L6
+VMTSB@GT2l0J9TcXThAOVF1
+R7
+31
+Z53 !s108 1467849896.052000
+Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ID_EX.vhd|
+Z55 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ID_EX.vhd|
+R11
+R12
+!s100 <IGJ[YClQ3L;1zRlRgfcB3
+!i10b 1
+Aid_exarc
+R14
+R2
+R3
+DEx4 work 5 id_ex 0 22 MTSB@GT2l0J9TcXThAOVF1
+l24
+L23
+VJI;C@MU]ZfU`ZB8ej0X6?0
+R7
+31
+R53
+R54
+R55
+R11
+R12
+!s100 SG@3A<1Z1MQIjXALV80@z0
+!i10b 1
+Eif_id
+Z56 w1467736314
+R14
+R2
+R3
+R4
+Z57 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/IF_ID.vhd
+Z58 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/IF_ID.vhd
+l0
+L6
+VcldBVo7T]AEe`oG2PNIM>0
+R7
+31
+Z59 !s108 1467849895.775000
+Z60 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/IF_ID.vhd|
+Z61 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/IF_ID.vhd|
+R11
+R12
+!s100 8WlDHCViDI3beCmU`3Z>?2
+!i10b 1
+Aif_idarc
+R14
+R2
+R3
+DEx4 work 5 if_id 0 22 cldBVo7T]AEe`oG2PNIM>0
+l17
+L15
+VecCkOYL_NFVHa[6QP1NIb2
+R7
+31
+R59
+R60
+R61
+R11
+R12
+!s100 nRGE;XOg2j<<X=jeK1FHX2
+!i10b 1
+Emem_wb
+Z62 w1467429796
+R14
+R2
+R3
+R4
+Z63 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEM_WB.vhd
+Z64 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEM_WB.vhd
+l0
+L6
+Vd5cXQ?`M:S@_dohlblFn@3
+R7
+31
+Z65 !s108 1467849896.529000
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEM_WB.vhd|
+Z67 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEM_WB.vhd|
+R11
+R12
+!s100 [:3_P1ILG=SG_Ji>_bi1z2
+!i10b 1
+Amem_wbarc
+R14
+R2
+R3
+DEx4 work 6 mem_wb 0 22 d5cXQ?`M:S@_dohlblFn@3
+l20
+L19
+V;51@McD[AQgO=0i>XCf171
+R7
+31
+R65
+R66
+R67
+R11
+R12
+!s100 ]EMQ@[zoCF]:R_E^MjaWz0
+!i10b 1
+Ememdad
+Z68 w1467848133
+R2
+R3
+R4
+Z69 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemDad.vhd
+Z70 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemDad.vhd
+l0
+L42
+V:c3UzIAHo<@:;;YYOEQ?41
+R7
+31
+Z71 !s108 1467849892.916000
+Z72 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemDad.vhd|
+Z73 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemDad.vhd|
+R11
+R12
+!s100 QjWMMH_UmE7Tf<08dnmlI1
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 6 memdad 0 22 :c3UzIAHo<@:;;YYOEQ?41
+l83
+L53
+V>^BR1HIVja9Zo1AR4W[nK3
+R7
+31
+R71
+R72
+R73
+R11
+R12
+!s100 o?CXoj6T`4OeQM?PeE:QE0
+!i10b 1
+Ememdados
+Z74 w1467848031
+R14
+R2
+R3
+R4
+Z75 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEMDADOS.vhd
+Z76 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEMDADOS.vhd
+l0
+L6
+V1Yd>?NI0^JBoV4PFNZW;80
+R7
+31
+Z77 !s108 1467849895.564000
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEMDADOS.vhd|
+Z79 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEMDADOS.vhd|
+R11
+R12
+!s100 _]gKSiD?UaMgh:TBN@o^13
+!i10b 1
+Amemarc
+R14
+R2
+R3
+DEx4 work 8 memdados 0 22 1Yd>?NI0^JBoV4PFNZW;80
+l47
+L20
+Vz_@RH7UOce`0YhmS0okmY1
+R7
+31
+R77
+R78
+R79
+R11
+R12
+!s100 ef4e26g[Z0kHZ6U^M2d3=2
+!i10b 1
+Ememinst
+Z80 w1467848109
+R2
+R3
+R4
+Z81 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemInst.vhd
+Z82 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemInst.vhd
+l0
+L42
+VZ[WO8@bo36NGNoMKLl`l20
+R7
+31
+Z83 !s108 1467849896.944000
+Z84 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemInst.vhd|
+Z85 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemInst.vhd|
+R11
+R12
+!s100 EVgjOFUc^n?fOgWaQ72F40
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 7 meminst 0 22 Z[WO8@bo36NGNoMKLl`l20
+l80
+L51
+V?7I;mPeOfLEYl<Ui1fXGG0
+R7
+31
+R83
+R84
+R85
+R11
+R12
+!s100 LW@I[;hbAc3c8K[6KPP=J2
+!i10b 1
+Emux_2
+Z86 w1467402026
+R14
+R2
+R3
+R4
+Z87 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_2.vhd
+Z88 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_2.vhd
+l0
+L6
+Vg6CmIKZT8RJ_fGD:d;a5V0
+R7
+31
+Z89 !s108 1467849892.323000
+Z90 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_2.vhd|
+Z91 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_2.vhd|
+R11
+R12
+!s100 icUhFW:85]8iaMHLQhKUR0
+!i10b 1
+Amuxarc
+R14
+R2
+R3
+DEx4 work 5 mux_2 0 22 g6CmIKZT8RJ_fGD:d;a5V0
+l17
+L15
+VeG`l4LYQPOi<D>]eC5KE10
+R7
+31
+R89
+R90
+R91
+R11
+R12
+!s100 LCan^SJ6H37ZRLYS>HZjQ1
+!i10b 1
+Emux_5bits
+Z92 w1466906788
+R14
+R2
+R3
+R4
+Z93 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_5bits.vhd
+Z94 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_5bits.vhd
+l0
+L6
+V?3m55iRDC[3mngXOiZBhf0
+R7
+31
+Z95 !s108 1467849894.751000
+Z96 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_5bits.vhd|
+Z97 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_5bits.vhd|
+R11
+R12
+!s100 LZ7;9JNW^h^C?DmT_0Joz0
+!i10b 1
+Amuxarc
+R14
+R2
+R3
+DEx4 work 9 mux_5bits 0 22 ?3m55iRDC[3mngXOiZBhf0
+l16
+L14
+VLDaPU:JNOlV]NlOOJ^`h92
+R7
+31
+R95
+R96
+R97
+R11
+R12
+!s100 J9Fhc@nED3@[7>fBX6>j92
+!i10b 1
+Emux_6
+Z98 w1467677174
+R14
+R2
+R3
+R4
+Z99 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_6.vhd
+Z100 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_6.vhd
+l0
+L6
+V=ZcoOoh6m^fgb7[Q?zMY93
+R7
+31
+Z101 !s108 1467849897.148000
+Z102 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_6.vhd|
+Z103 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_6.vhd|
+R11
+R12
+!s100 SN`AMlXRe8N=JkT=T[n=E1
+!i10b 1
+Amuxarc
+R14
+R2
+R3
+DEx4 work 5 mux_6 0 22 =ZcoOoh6m^fgb7[Q?zMY93
+l16
+L14
+V3BDSkBXih15UA::zGV1Dh0
+R7
+31
+R101
+R102
+R103
+R11
+R12
+!s100 YbS<=`^?b`;;M5=:mHD[I1
+!i10b 1
+Epc
+Z104 w1467203222
+R14
+R2
+R3
+R4
+Z105 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/PC.vhd
+Z106 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/PC.vhd
+l0
+L5
+VY>_[aNhgbSfZ:lmD_TXCd0
+R7
+31
+Z107 !s108 1467849893.115000
+Z108 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/PC.vhd|
+Z109 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/PC.vhd|
+R11
+R12
+!s100 ESE:<l8jS@3E2_hSFmdSW3
+!i10b 1
+Apcarc
+R14
+R2
+R3
+DEx4 work 2 pc 0 22 Y>_[aNhgbSfZ:lmD_TXCd0
+l15
+L13
+V>NKB^fX9P^]]]d94a>DGd1
+R7
+31
+R107
+R108
+R109
+R11
+R12
+!s100 26B1eWU:oKPcS@WGTJ?n91
+!i10b 1
+Epipeline
+Z110 w1467848676
+R14
+R2
+R3
+R4
+Z111 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/pipeline.vhd
+Z112 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/pipeline.vhd
+l0
+L6
+VWiH@g:P:=?H2IX[hlTL<i1
+R7
+31
+Z113 !s108 1467849892.749000
+Z114 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/pipeline.vhd|
+Z115 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/pipeline.vhd|
+R11
+R12
+!s100 M2<Cc:6So@[`XB]9C7HFH1
+!i10b 1
+Apipelinearc
+R14
+R2
+R3
+DEx4 work 8 pipeline 0 22 WiH@g:P:=?H2IX[hlTL<i1
+l147
+L24
+VTYOT>`dC;?]aNTijQUTVT1
+R7
+31
+R113
+R114
+R115
+R11
+R12
+!s100 :iF30nSa[gi_b`JUmkg<Z3
+!i10b 1
+Epipeline_tb
+Z116 w1467849873
+R2
+R3
+R4
+Z117 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/simulation/modelsim/pipeline_tb.vhd
+Z118 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/simulation/modelsim/pipeline_tb.vhd
+l0
+L30
+VDS3UZ]ga9Rz@K1VOHDRj`0
+!s100 n@?ncg5TI]`QfU?S6m3JM2
+R7
+31
+!i10b 1
+Z119 !s108 1467849897.368000
+Z120 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/simulation/modelsim/pipeline_tb.vhd|
+Z121 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/simulation/modelsim/pipeline_tb.vhd|
+R11
+R12
+Apipeline_arch
+R2
+R3
+DEx4 work 11 pipeline_tb 0 22 DS3UZ]ga9Rz@K1VOHDRj`0
+l64
+L32
+V[eIemeT4O1YSi4SKX:44Q1
+!s100 R?cW[QN4iAiOKAdUz1KW03
+R7
+31
+!i10b 1
+R119
+R120
+R121
+R11
+R12
+Eshiftleft
+Z122 w1467847496
+R14
+R2
+R3
+R4
+Z123 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ShiftLeft.vhd
+Z124 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ShiftLeft.vhd
+l0
+L6
+V9OH2n^Q8CAM5i26dG?D;;3
+R7
+31
+Z125 !s108 1467849892.528000
+Z126 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ShiftLeft.vhd|
+Z127 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ShiftLeft.vhd|
+R11
+R12
+!s100 APZdL:o02Uo^o8MUCT8P92
+!i10b 1
+Ashiftleftarc
+R14
+R2
+R3
+DEx4 work 9 shiftleft 0 22 9OH2n^Q8CAM5i26dG?D;;3
+l16
+L14
+V^CFPn`:P1]?_A8GA48=;D0
+R7
+31
+R125
+R126
+R127
+R11
+R12
+!s100 o1g2eSmz5BZ2aHCO^dkL11
+!i10b 1
+Esign_ext
+Z128 w1467847661
+R14
+R2
+R3
+R4
+Z129 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/sign_ext.vhd
+Z130 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/sign_ext.vhd
+l0
+L6
+VkBYZolII7Tznch_LEHBH:0
+R7
+31
+Z131 !s108 1467849893.997000
+Z132 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/sign_ext.vhd|
+Z133 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/sign_ext.vhd|
+R11
+R12
+!s100 4K5B6O5Ad<?=GHmQW1Ioh2
+!i10b 1
+Asign_ext_arch
+R14
+R2
+R3
+DEx4 work 8 sign_ext 0 22 kBYZolII7Tznch_LEHBH:0
+l15
+L13
+Vdce_dRGoG9JNGW@fWYJc32
+R7
+31
+R131
+R132
+R133
+R11
+R12
+!s100 @;EgPccORmJhUW:G1mjo`0
+!i10b 1
+Esom
+Z134 w1467847579
+R14
+R2
+R3
+R4
+Z135 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/SOM.vhd
+Z136 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/SOM.vhd
+l0
+L6
+VSe_I]]eW7MnVTU[ONZP^53
+R7
+31
+Z137 !s108 1467849893.637000
+Z138 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/SOM.vhd|
+Z139 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/SOM.vhd|
+R11
+R12
+!s100 YeolNIzBR]_1Z:7g1E`O02
+!i10b 1
+Asomarch
+R14
+R2
+R3
+DEx4 work 3 som 0 22 Se_I]]eW7MnVTU[ONZP^53
+l19
+L17
+V0SPj8Y>]Vj0G]U4QQajHN2
+R7
+31
+R137
+R138
+R139
+R11
+R12
+!s100 jeam6XD^P9=eTdhGlj^971
+!i10b 1
+Eulacontrol
+Z140 w1467847874
+R14
+R2
+R3
+R4
+Z141 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaCONTROL.vhd
+Z142 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaCONTROL.vhd
+l0
+L6
+VXh:z5]m1DdI1^L7BnQi8?3
+R7
+31
+Z143 !s108 1467849894.554000
+Z144 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaCONTROL.vhd|
+Z145 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaCONTROL.vhd|
+R11
+R12
+!s100 b>@Y@Ij0TPFXXK`3nXkPE1
+!i10b 1
+Abehav
+R14
+R2
+R3
+DEx4 work 10 ulacontrol 0 22 Xh:z5]m1DdI1^L7BnQi8?3
+l41
+L14
+VJ5LUlie?_ff@]NUBeK87=2
+R7
+31
+R143
+R144
+R145
+R11
+R12
+!s100 <7@c6i>k7n?HH0kgH7OCz1
+!i10b 1
+Eulamips
+Z146 w1467847618
+R14
+R2
+R3
+R4
+Z147 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaMIPS.vhd
+Z148 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaMIPS.vhd
+l0
+L6
+VFDW23eiRoaP]hglYeZ^3b2
+R7
+31
+Z149 !s108 1467849893.834000
+Z150 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaMIPS.vhd|
+Z151 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaMIPS.vhd|
+R11
+R12
+!s100 IO86V:fL53HfG`Q;jVUb61
+!i10b 1
+Aulaexec
+R14
+R2
+R3
+DEx4 work 7 ulamips 0 22 FDW23eiRoaP]hglYeZ^3b2
+l18
+L16
+VK;T:B>RA<Z_@]I[QfH:Z@2
+R7
+31
+R149
+R150
+R151
+R11
+R12
+!s100 QIj;^IJzKDkfDh<@f5XIb2
+!i10b 1
+Ewriteback
+Z152 w1467848071
+R14
+R2
+R3
+R4
+Z153 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/WRITEBACK.vhd
+Z154 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/WRITEBACK.vhd
+l0
+L6
+V:YBANWM;H3^DQl:`Y3m8l2
+R7
+31
+Z155 !s108 1467849896.749000
+Z156 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/WRITEBACK.vhd|
+Z157 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/WRITEBACK.vhd|
+R11
+R12
+!s100 oOK8iQgM;X6YZ88TPhm4L0
+!i10b 1
+Awbarc
+R14
+R2
+R3
+DEx4 work 9 writeback 0 22 :YBANWM;H3^DQl:`Y3m8l2
+l30
+L19
+VC?n_5MeZ_7<@@Bz7^?j;e1
+R7
+31
+R155
+R156
+R157
+R11
+R12
+!s100 KQ?VTKK[fOiaNa53@JiZQ1
+!i10b 1

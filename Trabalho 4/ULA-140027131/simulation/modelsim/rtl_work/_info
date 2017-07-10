@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\mp_ca\Desktop\Marcos Paulo\UnB\OAC\Trabalho 4\ULA-FINAL\simulation\modelsim
+Eulamips
+Z1 w1464353740
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\mp_ca\Desktop\Marcos Paulo\UnB\OAC\Trabalho 4\ULA-FINAL\simulation\modelsim
+Z6 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 4/ULA-FINAL/ulaMIPS.vhd
+Z7 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 4/ULA-FINAL/ulaMIPS.vhd
+l0
+L5
+VFDW23eiRoaP]hglYeZ^3b2
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1464357004.333000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 4/ULA-FINAL/ulaMIPS.vhd|
+Z11 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 4/ULA-FINAL/ulaMIPS.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 ;69gZM`>HRIjfoC9l_l_W3
+!i10b 1
+Aulaexec
+R2
+R3
+R4
+DEx4 work 7 ulamips 0 22 FDW23eiRoaP]hglYeZ^3b2
+l17
+L15
+Vbba3E1Hm>o`Mj=0kj@Ojk2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 8VXg@HU78M2NaAN^A6Q>32
+!i10b 1
+Eulamips_tb
+Z14 w1464354818
+R3
+R4
+R5
+Z15 8C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 4/ULA-FINAL/simulation/modelsim/ulaMIPS_tb.vhd
+Z16 FC:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 4/ULA-FINAL/simulation/modelsim/ulaMIPS_tb.vhd
+l0
+L30
+VS^ia1R7M;@f67c_=:zb_M2
+!s100 >IF^9XQL<UM4VeYfW?J>R2
+R8
+31
+!i10b 1
+Z17 !s108 1464357004.574000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 4/ULA-FINAL/simulation/modelsim/ulaMIPS_tb.vhd|
+Z19 !s107 C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Trabalho 4/ULA-FINAL/simulation/modelsim/ulaMIPS_tb.vhd|
+R12
+R13
+Aulamips_arch
+R3
+R4
+DEx4 work 10 ulamips_tb 0 22 S^ia1R7M;@f67c_=:zb_M2
+l54
+L32
+Vfc:SIKZQgzIo32WGJE`zX3
+!s100 8:okAR06AWmKb4;L:HJdm1
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

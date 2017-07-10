@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jun 04 16:56:45 2016
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : bregMIPS
+Top-level Entity Name : bregMIPS
+Family : Cyclone II
+Total logic elements : 2,374
+    Total combinational functions : 1,382
+    Dedicated logic registers : 1,056
+Total registers : 1056
+Total pins : 113
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,1294 @@
+Analysis & Synthesis report for pipeline
+Wed Jul 06 20:59:10 2016
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component|altsyncram_tl71:auto_generated
+ 15. Source assignments for MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated
+ 16. Parameter Settings for User Entity Instance: Top-level Entity: |pipeline
+ 17. Parameter Settings for User Entity Instance: FETCH:PIP1
+ 18. Parameter Settings for User Entity Instance: FETCH:PIP1|MUX_2:MUX_PC
+ 19. Parameter Settings for User Entity Instance: FETCH:PIP1|PC:ATUAL_PC
+ 20. Parameter Settings for User Entity Instance: FETCH:PIP1|SOM:INCR_PC
+ 21. Parameter Settings for User Entity Instance: FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component
+ 22. Parameter Settings for User Entity Instance: FETCH:PIP1|IF_ID:IFID
+ 23. Parameter Settings for User Entity Instance: DECODE:PIP2
+ 24. Parameter Settings for User Entity Instance: DECODE:PIP2|bregMIPS:BREG
+ 25. Parameter Settings for User Entity Instance: DECODE:PIP2|ShiftLeft:SHL
+ 26. Parameter Settings for User Entity Instance: DECODE:PIP2|SOM:SOMB
+ 27. Parameter Settings for User Entity Instance: DECODE:PIP2|ID_EX:IDEX
+ 28. Parameter Settings for User Entity Instance: EXECUTE:PIP3
+ 29. Parameter Settings for User Entity Instance: EXECUTE:PIP3|MUX_2:MUX1
+ 30. Parameter Settings for User Entity Instance: EXECUTE:PIP3|MUX_2:MUX2
+ 31. Parameter Settings for User Entity Instance: EXECUTE:PIP3|ulaMIPS:ULA
+ 32. Parameter Settings for User Entity Instance: EXECUTE:PIP3|EX_MEM:EXMEM
+ 33. Parameter Settings for User Entity Instance: MEMDADOS:PIP4
+ 34. Parameter Settings for User Entity Instance: MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component
+ 35. Parameter Settings for User Entity Instance: MEMDADOS:PIP4|MEM_WB:MEMWB
+ 36. Parameter Settings for User Entity Instance: WRITEBACK:PIP5
+ 37. Parameter Settings for User Entity Instance: WRITEBACK:PIP5|MUX_2:MUX_DATA
+ 38. altsyncram Parameter Settings by Entity Instance
+ 39. Port Connectivity Checks: "EXECUTE:PIP3"
+ 40. Port Connectivity Checks: "DECODE:PIP2"
+ 41. Port Connectivity Checks: "FETCH:PIP1|SOM:INCR_PC"
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Jul 06 20:59:10 2016      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; pipeline                                   ;
+; Top-level Entity Name              ; pipeline                                   ;
+; Family                             ; Cyclone II                                 ;
+; Total logic elements               ; 4,292                                      ;
+;     Total combinational functions  ; 3,297                                      ;
+;     Dedicated logic registers      ; 1,311                                      ;
+; Total registers                    ; 1311                                       ;
+; Total pins                         ; 276                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 16,384                                     ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C70F896C6       ;                    ;
+; Top-level entity name                                                      ; pipeline           ; pipeline           ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
++----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                 ; Library ;
++----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; bin_7seg.vhd                     ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bin_7seg.vhd           ;         ;
+; MUX_2.vhd                        ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_2.vhd              ;         ;
+; ShiftLeft.vhd                    ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ShiftLeft.vhd          ;         ;
+; pipeline.vhd                     ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/pipeline.vhd           ;         ;
+; MemDad.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemDad.vhd             ;         ;
+; PC.vhd                           ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/PC.vhd                 ;         ;
+; bregMIPS.vhd                     ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/bregMIPS.vhd           ;         ;
+; SOM.vhd                          ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/SOM.vhd                ;         ;
+; ulaMIPS.vhd                      ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaMIPS.vhd            ;         ;
+; sign_ext.vhd                     ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/sign_ext.vhd           ;         ;
+; CONTROL.vhd                      ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/CONTROL.vhd            ;         ;
+; ulaCONTROL.vhd                   ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ulaCONTROL.vhd         ;         ;
+; MUX_5bits.vhd                    ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_5bits.vhd          ;         ;
+; FETCH.vhd                        ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/FETCH.vhd              ;         ;
+; DECODE.vhd                       ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/DECODE.vhd             ;         ;
+; EXECUTE.vhd                      ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EXECUTE.vhd            ;         ;
+; MEMDADOS.vhd                     ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEMDADOS.vhd           ;         ;
+; IF_ID.vhd                        ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/IF_ID.vhd              ;         ;
+; ID_EX.vhd                        ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/ID_EX.vhd              ;         ;
+; EX_MEM.vhd                       ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/EX_MEM.vhd             ;         ;
+; MEM_WB.vhd                       ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MEM_WB.vhd             ;         ;
+; WRITEBACK.vhd                    ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/WRITEBACK.vhd          ;         ;
+; MemInst.vhd                      ; yes             ; User Wizard-Generated File             ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemInst.vhd            ;         ;
+; MUX_6.vhd                        ; yes             ; User VHDL File                         ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MUX_6.vhd              ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/altsyncram.tdf                                                ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/stratix_ram_block.inc                                         ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/lpm_mux.inc                                                   ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/lpm_decode.inc                                                ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/aglobal130.inc                                                ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/a_rdenreg.inc                                                 ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/altrom.inc                                                    ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/altram.inc                                                    ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/altera/13.0/quartus/libraries/megafunctions/altdpram.inc                                                  ;         ;
+; db/altsyncram_tl71.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/db/altsyncram_tl71.tdf ;         ;
+; text.mif                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/text.mif               ;         ;
+; db/altsyncram_lnc1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/db/altsyncram_lnc1.tdf ;         ;
+; data.mif                         ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/data.mif               ;         ;
++----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 4,292 ;
+;                                             ;       ;
+; Total combinational functions               ; 3297  ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 2388  ;
+;     -- 3 input functions                    ; 698   ;
+;     -- <=2 input functions                  ; 211   ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 3176  ;
+;     -- arithmetic mode                      ; 121   ;
+;                                             ;       ;
+; Total registers                             ; 1311  ;
+;     -- Dedicated logic registers            ; 1311  ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 276   ;
+; Total memory bits                           ; 16384 ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; rst   ;
+; Maximum fan-out                             ; 1238  ;
+; Total fan-out                               ; 17959 ;
+; Average fan-out                             ; 3.63  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
+; |pipeline                                    ; 3297 (1)          ; 1311 (1)     ; 16384       ; 0            ; 0       ; 0         ; 276  ; 0            ; |pipeline                                                                                              ;              ;
+;    |DECODE:PIP2|                             ; 1640 (84)         ; 1137 (1)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|DECODE:PIP2                                                                                  ;              ;
+;       |CONTROL:CTRL|                         ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|DECODE:PIP2|CONTROL:CTRL                                                                     ;              ;
+;       |ID_EX:IDEX|                           ; 90 (90)           ; 144 (144)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|DECODE:PIP2|ID_EX:IDEX                                                                       ;              ;
+;       |SOM:SOMB|                             ; 36 (36)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|DECODE:PIP2|SOM:SOMB                                                                         ;              ;
+;       |bregMIPS:BREG|                        ; 1381 (1381)       ; 992 (992)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|DECODE:PIP2|bregMIPS:BREG                                                                    ;              ;
+;       |ulaCONTROL:ULACONTR|                  ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|DECODE:PIP2|ulaCONTROL:ULACONTR                                                              ;              ;
+;    |EXECUTE:PIP3|                            ; 1349 (0)          ; 73 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|EXECUTE:PIP3                                                                                 ;              ;
+;       |EX_MEM:EXMEM|                         ; 96 (96)           ; 73 (73)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|EXECUTE:PIP3|EX_MEM:EXMEM                                                                    ;              ;
+;       |MUX_2:MUX1|                           ; 34 (34)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|EXECUTE:PIP3|MUX_2:MUX1                                                                      ;              ;
+;       |MUX_2:MUX2|                           ; 34 (34)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|EXECUTE:PIP3|MUX_2:MUX2                                                                      ;              ;
+;       |MUX_5bits:MUXRegDst|                  ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|EXECUTE:PIP3|MUX_5bits:MUXRegDst                                                             ;              ;
+;       |ulaMIPS:ULA|                          ; 1180 (1180)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|EXECUTE:PIP3|ulaMIPS:ULA                                                                     ;              ;
+;    |FETCH:PIP1|                              ; 91 (60)           ; 61 (0)       ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|FETCH:PIP1                                                                                   ;              ;
+;       |IF_ID:IFID|                           ; 31 (31)           ; 61 (61)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|FETCH:PIP1|IF_ID:IFID                                                                        ;              ;
+;       |MemInst:MEM_INSTR|                    ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|FETCH:PIP1|MemInst:MEM_INSTR                                                                 ;              ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component                                 ;              ;
+;             |altsyncram_tl71:auto_generated| ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component|altsyncram_tl71:auto_generated  ;              ;
+;    |MEMDADOS:PIP4|                           ; 0 (0)             ; 39 (0)       ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|MEMDADOS:PIP4                                                                                ;              ;
+;       |MEM_WB:MEMWB|                         ; 0 (0)             ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|MEMDADOS:PIP4|MEM_WB:MEMWB                                                                   ;              ;
+;       |MemDad:MEM_DADO|                      ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|MEMDADOS:PIP4|MemDad:MEM_DADO                                                                ;              ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component                                ;              ;
+;             |altsyncram_lnc1:auto_generated| ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated ;              ;
+;    |MUX_6:MUXAO|                             ; 128 (128)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|MUX_6:MUXAO                                                                                  ;              ;
+;    |WRITEBACK:PIP5|                          ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|WRITEBACK:PIP5                                                                               ;              ;
+;    |bin_7seg:SEG70|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|bin_7seg:SEG70                                                                               ;              ;
+;    |bin_7seg:SEG71|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|bin_7seg:SEG71                                                                               ;              ;
+;    |bin_7seg:SEG72|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|bin_7seg:SEG72                                                                               ;              ;
+;    |bin_7seg:SEG73|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|bin_7seg:SEG73                                                                               ;              ;
+;    |bin_7seg:SEG74|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|bin_7seg:SEG74                                                                               ;              ;
+;    |bin_7seg:SEG75|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|bin_7seg:SEG75                                                                               ;              ;
+;    |bin_7seg:SEG76|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|bin_7seg:SEG76                                                                               ;              ;
+;    |bin_7seg:SEG77|                          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pipeline|bin_7seg:SEG77                                                                               ;              ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                           ;
++---------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------+
+; Name                                                                                                    ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF      ;
++---------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------+
+; FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component|altsyncram_tl71:auto_generated|ALTSYNCRAM  ; AUTO ; ROM         ; 256          ; 32           ; --           ; --           ; 8192 ; text.mif ;
+; MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; data.mif ;
++---------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                       ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------+---------------------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                         ; IP Include File                                                                                   ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------+---------------------------------------------------------------------------------------------------+
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |pipeline|FETCH:PIP1|MemInst:MEM_INSTR  ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemInst.vhd ;
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |pipeline|MEMDADOS:PIP4|MemDad:MEM_DADO ; C:/Users/mp_ca/Desktop/Marcos Paulo/UnB/OAC/Projeto Final/Ingrid_Marcos/MIPS Pipeline/MemDad.vhd  ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------+---------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                  ;
++--------------------------------------------+--------------------------------------------------------+
+; Register name                              ; Reason for Removal                                     ;
++--------------------------------------------+--------------------------------------------------------+
+; DECODE:PIP2|ID_EX:IDEX|instrAUX[11]~en     ; Lost fanout                                            ;
+; DECODE:PIP2|ID_EX:IDEX|instrAUX[12]~en     ; Lost fanout                                            ;
+; DECODE:PIP2|ID_EX:IDEX|instrAUX[13]~en     ; Lost fanout                                            ;
+; DECODE:PIP2|ID_EX:IDEX|instrAUX[14]~en     ; Lost fanout                                            ;
+; DECODE:PIP2|ID_EX:IDEX|instrAUX[15]~en     ; Lost fanout                                            ;
+; FETCH:PIP1|IF_ID:IFID|PC4OUT[1]            ; Merged with FETCH:PIP1|IF_ID:IFID|PCatualOUT[1]        ;
+; FETCH:PIP1|IF_ID:IFID|PC4OUT[0]            ; Merged with FETCH:PIP1|IF_ID:IFID|PCatualOUT[0]        ;
+; DECODE:PIP2|ID_EX:IDEX|signImm[16..31]     ; Merged with DECODE:PIP2|ID_EX:IDEX|signImm[15]         ;
+; FETCH:PIP1|IF_ID:IFID|PC4OUT[2]            ; Merged with FETCH:PIP1|IF_ID:IFID|PCatualOUT[2]        ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][31]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][30]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][29]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][28]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][27]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][26]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][25]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][24]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][23]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][22]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][21]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][20]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][19]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][18]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][17]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][16]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][15]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][14]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][13]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][12]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][11]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][10]      ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][9]       ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][8]       ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][7]       ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][6]       ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][5]       ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][4]       ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][3]       ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][2]       ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][1]       ; Stuck at GND due to stuck port clock_enable            ;
+; DECODE:PIP2|bregMIPS:BREG|regs[0][0]       ; Stuck at GND due to stuck port clock_enable            ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[12]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[31]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[31]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[30]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[30]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[29]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[29]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[28]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[28]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[27]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[27]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[26]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[26]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[25]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[25]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[24]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[24]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[23]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[23]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[22]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[22]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[21]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[21]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[20]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[20]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[19]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[19]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[18]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[18]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[17]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[17]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[16]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[16]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[15]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[15]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[14]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[14]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[13]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[13]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[11]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[11]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[10]~en ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[10]~en ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[9]~en  ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[9]~en  ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[8]~en  ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[8]~en  ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[7]~en  ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[7]~en  ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[6]~en  ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[6]~en  ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[5]~en  ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[5]~en  ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[4]~en  ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[4]~en  ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[3]~en  ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[3]~en  ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[2]~en  ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[2]~en  ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[1]~en  ;
+; EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[1]~en  ; Merged with EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[0]~en  ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[4]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[3]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[3]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[2]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[2]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[1]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[1]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[0]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[0]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[31]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[31]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[30]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[30]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[29]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[29]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[28]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[28]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[27]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[27]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[26]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[26]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[25]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[25]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[24]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[24]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[23]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[23]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[22]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[22]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[21]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[21]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[20]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[20]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[19]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[19]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[24]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[24]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[17]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[17]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[16]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[16]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[15]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[15]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[14]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[14]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[13]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[13]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[12]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[12]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[11]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[11]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[10]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[10]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[9]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[9]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[8]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[8]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[7]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[7]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[6]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[6]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[5]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[5]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[4]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[4]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[3]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[3]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[2]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[2]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[1]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[1]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[0]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[0]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|instrAUX[20]~en     ;
+; DECODE:PIP2|ID_EX:IDEX|instrAUX[20]~en     ; Merged with DECODE:PIP2|ID_EX:IDEX|instrAUX[19]~en     ;
+; DECODE:PIP2|ID_EX:IDEX|instrAUX[19]~en     ; Merged with DECODE:PIP2|ID_EX:IDEX|instrAUX[18]~en     ;
+; DECODE:PIP2|ID_EX:IDEX|instrAUX[18]~en     ; Merged with DECODE:PIP2|ID_EX:IDEX|instrAUX[17]~en     ;
+; DECODE:PIP2|ID_EX:IDEX|instrAUX[17]~en     ; Merged with DECODE:PIP2|ID_EX:IDEX|instrAUX[16]~en     ;
+; DECODE:PIP2|ID_EX:IDEX|instrAUX[16]~en     ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[31]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[31]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[30]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[30]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[29]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[29]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[28]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[28]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[27]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[27]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[26]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[26]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[25]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[25]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[23]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[23]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[22]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[22]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[21]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[21]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[20]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[20]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[19]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[19]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[18]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[18]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[17]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[17]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida1[18]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida1[18]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[16]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[16]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[15]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[15]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[14]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[14]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[13]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[13]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[12]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[12]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[11]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[11]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[10]~en       ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[10]~en       ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[9]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[9]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[8]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[8]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[7]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[7]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[6]~en        ;
+; DECODE:PIP2|ID_EX:IDEX|saida2[6]~en        ; Merged with DECODE:PIP2|ID_EX:IDEX|saida2[5]~en        ;
+; Total Number of Removed Registers = 155    ;                                                        ;
++--------------------------------------------+--------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 1311  ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 38    ;
+; Number of registers using Asynchronous Clear ; 1199  ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 994   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; DECODE:PIP2|ID_EX:IDEX|ula_ctr[0]      ; 109     ;
+; DECODE:PIP2|ID_EX:IDEX|ula_ctr[1]      ; 103     ;
+; DECODE:PIP2|ID_EX:IDEX|ula_ctr[2]      ; 24      ;
+; DECODE:PIP2|ID_EX:IDEX|ula_ctr[3]      ; 36      ;
+; DECODE:PIP2|ID_EX:IDEX|OrigPC          ; 62      ;
+; inicio                                 ; 64      ;
+; DECODE:PIP2|ID_EX:IDEX|MemparaReg      ; 1       ;
+; Total number of inverted registers = 7 ;         ;
++----------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |pipeline|DECODE:PIP2|ID_EX:IDEX|PCbranch[29]          ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |pipeline|DECODE:PIP2|ID_EX:IDEX|PCbranch[24]          ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 16 LEs               ; 2 LEs                  ; Yes        ; |pipeline|DECODE:PIP2|ID_EX:IDEX|ula_ctr[0]            ;
+; 15:1               ; 2 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |pipeline|DECODE:PIP2|ID_EX:IDEX|ula_ctr[1]            ;
+; 26:1               ; 7 bits    ; 119 LEs       ; 91 LEs               ; 28 LEs                 ; Yes        ; |pipeline|EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[14]~reg0 ;
+; 26:1               ; 7 bits    ; 119 LEs       ; 91 LEs               ; 28 LEs                 ; Yes        ; |pipeline|EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[18]~reg0 ;
+; 28:1               ; 4 bits    ; 72 LEs        ; 60 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[4]~reg0  ;
+; 28:1               ; 4 bits    ; 72 LEs        ; 60 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[26]~reg0 ;
+; 30:1               ; 2 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |pipeline|EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[2]~reg0  ;
+; 30:1               ; 2 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |pipeline|EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[29]~reg0 ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |pipeline|DECODE:PIP2|RegEscrita[3]                    ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|FETCH:PIP1|PCatualaux2[20]                   ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|WRITEBACK:PIP5|WriData[21]                   ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |pipeline|MUX_6:MUXAO|Mux25                            ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |pipeline|DECODE:PIP2|bregMIPS:BREG|Mux40              ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |pipeline|DECODE:PIP2|bregMIPS:BREG|Mux5               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Source assignments for FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component|altsyncram_tl71:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                   ;
++---------------------------------+--------------------+------+------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                    ;
++---------------------------------+--------------------+------+------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Source assignments for MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                    ;
++---------------------------------+--------------------+------+-------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                     ;
++---------------------------------+--------------------+------+-------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |pipeline ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FETCH:PIP1 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; WSIZE          ; 32    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FETCH:PIP1|MUX_2:MUX_PC ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FETCH:PIP1|PC:ATUAL_PC ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FETCH:PIP1|SOM:INCR_PC ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-----------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                          ;
++------------------------------------+----------------------+-----------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                       ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                       ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                       ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                                ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                                ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                       ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                       ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                       ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                       ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                       ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                       ;
+; WIDTH_B                            ; 1                    ; Untyped                                       ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                       ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                       ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                       ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                       ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                       ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                       ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                       ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                       ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                       ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                       ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                       ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                       ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                       ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                       ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                       ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                       ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                       ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                       ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                       ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                       ;
+; INIT_FILE                          ; text.mif             ; Untyped                                       ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                       ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                       ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                       ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                       ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                       ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                       ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                       ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                       ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                       ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                       ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                       ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                       ;
+; CBXI_PARAMETER                     ; altsyncram_tl71      ; Untyped                                       ;
++------------------------------------+----------------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FETCH:PIP1|IF_ID:IFID ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DECODE:PIP2 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WSIZE          ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DECODE:PIP2|bregMIPS:BREG ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DECODE:PIP2|ShiftLeft:SHL ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DECODE:PIP2|SOM:SOMB ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DECODE:PIP2|ID_EX:IDEX ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXECUTE:PIP3 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WSIZE          ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXECUTE:PIP3|MUX_2:MUX1 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXECUTE:PIP3|MUX_2:MUX2 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXECUTE:PIP3|ulaMIPS:ULA ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXECUTE:PIP3|EX_MEM:EXMEM ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MEMDADOS:PIP4 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WSIZE          ; 32    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                           ;
++------------------------------------+----------------------+------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                        ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                 ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                        ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                        ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                 ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                                 ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                                 ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                        ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                        ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                        ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                        ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                        ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                        ;
+; WIDTH_B                            ; 1                    ; Untyped                                        ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                        ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                        ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                        ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                        ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                        ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                        ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                        ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                        ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                        ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                        ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                        ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                        ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                        ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                 ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                        ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                        ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                        ;
+; INIT_FILE                          ; data.mif             ; Untyped                                        ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                        ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                        ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                        ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                        ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                        ;
+; CBXI_PARAMETER                     ; altsyncram_lnc1      ; Untyped                                        ;
++------------------------------------+----------------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MEMDADOS:PIP4|MEM_WB:MEMWB ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; wsize          ; 32    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: WRITEBACK:PIP5 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: WRITEBACK:PIP5|MUX_2:MUX_DATA ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; WSIZE          ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                          ;
++-------------------------------------------+---------------------------------------------------------------+
+; Name                                      ; Value                                                         ;
++-------------------------------------------+---------------------------------------------------------------+
+; Number of entity instances                ; 2                                                             ;
+; Entity Instance                           ; FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component  ;
+;     -- OPERATION_MODE                     ; ROM                                                           ;
+;     -- WIDTH_A                            ; 32                                                            ;
+;     -- NUMWORDS_A                         ; 256                                                           ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                  ;
+;     -- WIDTH_B                            ; 1                                                             ;
+;     -- NUMWORDS_B                         ; 1                                                             ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                        ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                  ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                          ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                     ;
+; Entity Instance                           ; MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                   ;
+;     -- WIDTH_A                            ; 32                                                            ;
+;     -- NUMWORDS_A                         ; 256                                                           ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                  ;
+;     -- WIDTH_B                            ; 1                                                             ;
+;     -- NUMWORDS_B                         ; 1                                                             ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                        ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                  ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                          ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                     ;
++-------------------------------------------+---------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EXECUTE:PIP3"                                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; vai  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; zero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ovfl ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DECODE:PIP2"                                                                         ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; lemem ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "FETCH:PIP1|SOM:INCR_PC" ;
++----------+-------+----------+----------------------+
+; Port     ; Type  ; Severity ; Details              ;
++----------+-------+----------+----------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND         ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND         ;
+; b[2]     ; Input ; Info     ; Stuck at VCC         ;
++----------+-------+----------+----------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:29     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Wed Jul 06 20:58:37 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file bin_7seg.vhd
+    Info (12022): Found design unit 1: bin_7seg-decodificador
+    Info (12023): Found entity 1: bin_7seg
+Info (12021): Found 2 design units, including 1 entities, in source file mux_2.vhd
+    Info (12022): Found design unit 1: MUX_2-MUXarc
+    Info (12023): Found entity 1: MUX_2
+Info (12021): Found 2 design units, including 1 entities, in source file shiftleft.vhd
+    Info (12022): Found design unit 1: ShiftLeft-ShiftLeftarc
+    Info (12023): Found entity 1: ShiftLeft
+Info (12021): Found 2 design units, including 1 entities, in source file pipeline.vhd
+    Info (12022): Found design unit 1: pipeline-pipelineArc
+    Info (12023): Found entity 1: pipeline
+Info (12021): Found 2 design units, including 1 entities, in source file memdad.vhd
+    Info (12022): Found design unit 1: memdad-SYN
+    Info (12023): Found entity 1: MemDad
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
+    Info (12022): Found design unit 1: PC-PCarc
+    Info (12023): Found entity 1: PC
+Info (12021): Found 2 design units, including 1 entities, in source file bregmips.vhd
+    Info (12022): Found design unit 1: bregMIPS-bregArch
+    Info (12023): Found entity 1: bregMIPS
+Info (12021): Found 2 design units, including 1 entities, in source file som.vhd
+    Info (12022): Found design unit 1: SOM-SOMArch
+    Info (12023): Found entity 1: SOM
+Info (12021): Found 2 design units, including 1 entities, in source file ulamips.vhd
+    Info (12022): Found design unit 1: ulaMIPS-ulaExec
+    Info (12023): Found entity 1: ulaMIPS
+Info (12021): Found 2 design units, including 1 entities, in source file sign_ext.vhd
+    Info (12022): Found design unit 1: sign_ext-sign_ext_arch
+    Info (12023): Found entity 1: sign_ext
+Info (12021): Found 2 design units, including 1 entities, in source file mux_3.vhd
+    Info (12022): Found design unit 1: MUX_3-MUX3arc
+    Info (12023): Found entity 1: MUX_3
+Info (12021): Found 2 design units, including 1 entities, in source file control.vhd
+    Info (12022): Found design unit 1: CONTROL-control_op
+    Info (12023): Found entity 1: CONTROL
+Info (12021): Found 2 design units, including 1 entities, in source file ulacontrol.vhd
+    Info (12022): Found design unit 1: ulaCONTROL-behav
+    Info (12023): Found entity 1: ulaCONTROL
+Info (12021): Found 2 design units, including 1 entities, in source file mux_5bits.vhd
+    Info (12022): Found design unit 1: MUX_5bits-MUXarc
+    Info (12023): Found entity 1: MUX_5bits
+Info (12021): Found 2 design units, including 1 entities, in source file fetch.vhd
+    Info (12022): Found design unit 1: FETCH-fetchArc
+    Info (12023): Found entity 1: FETCH
+Info (12021): Found 2 design units, including 1 entities, in source file decode.vhd
+    Info (12022): Found design unit 1: DECODE-decodeArc
+    Info (12023): Found entity 1: DECODE
+Info (12021): Found 2 design units, including 1 entities, in source file execute.vhd
+    Info (12022): Found design unit 1: EXECUTE-executeArc
+    Info (12023): Found entity 1: EXECUTE
+Info (12021): Found 2 design units, including 1 entities, in source file memdados.vhd
+    Info (12022): Found design unit 1: MEMDADOS-memArc
+    Info (12023): Found entity 1: MEMDADOS
+Info (12021): Found 2 design units, including 1 entities, in source file if_id.vhd
+    Info (12022): Found design unit 1: IF_ID-if_idArc
+    Info (12023): Found entity 1: IF_ID
+Info (12021): Found 2 design units, including 1 entities, in source file id_ex.vhd
+    Info (12022): Found design unit 1: ID_EX-id_exArc
+    Info (12023): Found entity 1: ID_EX
+Info (12021): Found 2 design units, including 1 entities, in source file ex_mem.vhd
+    Info (12022): Found design unit 1: EX_MEM-ex_memArc
+    Info (12023): Found entity 1: EX_MEM
+Info (12021): Found 2 design units, including 1 entities, in source file mem_wb.vhd
+    Info (12022): Found design unit 1: MEM_WB-mem_wbArc
+    Info (12023): Found entity 1: MEM_WB
+Info (12021): Found 2 design units, including 1 entities, in source file writeback.vhd
+    Info (12022): Found design unit 1: WRITEBACK-wbArc
+    Info (12023): Found entity 1: WRITEBACK
+Info (12021): Found 2 design units, including 1 entities, in source file meminst.vhd
+    Info (12022): Found design unit 1: meminst-SYN
+    Info (12023): Found entity 1: MemInst
+Info (12021): Found 2 design units, including 1 entities, in source file mux_6.vhd
+    Info (12022): Found design unit 1: MUX_6-MUXarc
+    Info (12023): Found entity 1: MUX_6
+Info (12127): Elaborating entity "pipeline" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at pipeline.vhd(124): object "LeMem" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at pipeline.vhd(134): object "vai" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at pipeline.vhd(134): object "zero" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at pipeline.vhd(134): object "ovfl" assigned a value but never read
+Info (12128): Elaborating entity "FETCH" for hierarchy "FETCH:PIP1"
+Info (12128): Elaborating entity "MUX_2" for hierarchy "FETCH:PIP1|MUX_2:MUX_PC"
+Info (12128): Elaborating entity "PC" for hierarchy "FETCH:PIP1|PC:ATUAL_PC"
+Info (12128): Elaborating entity "SOM" for hierarchy "FETCH:PIP1|SOM:INCR_PC"
+Info (12128): Elaborating entity "MemInst" for hierarchy "FETCH:PIP1|MemInst:MEM_INSTR"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "text.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_tl71.tdf
+    Info (12023): Found entity 1: altsyncram_tl71
+Info (12128): Elaborating entity "altsyncram_tl71" for hierarchy "FETCH:PIP1|MemInst:MEM_INSTR|altsyncram:altsyncram_component|altsyncram_tl71:auto_generated"
+Info (12128): Elaborating entity "IF_ID" for hierarchy "FETCH:PIP1|IF_ID:IFID"
+Info (12128): Elaborating entity "DECODE" for hierarchy "DECODE:PIP2"
+Info (12128): Elaborating entity "CONTROL" for hierarchy "DECODE:PIP2|CONTROL:CTRL"
+Info (12128): Elaborating entity "ulaCONTROL" for hierarchy "DECODE:PIP2|ulaCONTROL:ULACONTR"
+Info (12128): Elaborating entity "bregMIPS" for hierarchy "DECODE:PIP2|bregMIPS:BREG"
+Info (12128): Elaborating entity "sign_ext" for hierarchy "DECODE:PIP2|sign_ext:SIGNEXT"
+Info (12128): Elaborating entity "ShiftLeft" for hierarchy "DECODE:PIP2|ShiftLeft:SHL"
+Info (12128): Elaborating entity "ID_EX" for hierarchy "DECODE:PIP2|ID_EX:IDEX"
+Info (12128): Elaborating entity "EXECUTE" for hierarchy "EXECUTE:PIP3"
+Info (12128): Elaborating entity "ulaMIPS" for hierarchy "EXECUTE:PIP3|ulaMIPS:ULA"
+Info (12128): Elaborating entity "MUX_5bits" for hierarchy "EXECUTE:PIP3|MUX_5bits:MUXRegDst"
+Info (12128): Elaborating entity "EX_MEM" for hierarchy "EXECUTE:PIP3|EX_MEM:EXMEM"
+Info (12128): Elaborating entity "MEMDADOS" for hierarchy "MEMDADOS:PIP4"
+Info (12128): Elaborating entity "MemDad" for hierarchy "MEMDADOS:PIP4|MemDad:MEM_DADO"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "data.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone II"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_lnc1.tdf
+    Info (12023): Found entity 1: altsyncram_lnc1
+Info (12128): Elaborating entity "altsyncram_lnc1" for hierarchy "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated"
+Info (12128): Elaborating entity "MEM_WB" for hierarchy "MEMDADOS:PIP4|MEM_WB:MEMWB"
+Info (12128): Elaborating entity "WRITEBACK" for hierarchy "WRITEBACK:PIP5"
+Info (12128): Elaborating entity "MUX_6" for hierarchy "MUX_6:MUXAO"
+Info (12128): Elaborating entity "bin_7seg" for hierarchy "bin_7seg:SEG70"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer clk
+    Warning (19017): Found clock multiplexer DECODE:PIP2|CONTROL:CTRL|Mux12
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[0]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[1]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[2]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[3]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[4]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[5]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[6]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[7]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[8]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[9]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[10]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[11]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[12]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[13]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[14]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[15]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[16]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[17]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[18]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[19]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[20]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[21]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[22]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[23]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[24]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[25]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[26]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[27]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[28]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[29]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[30]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "MUX_6:MUXAO|S[31]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[19]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[18]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[17]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[16]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[15]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[14]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[13]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[12]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[11]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[10]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[9]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[8]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[7]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[6]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[5]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[4]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[3]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[2]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[1]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[0]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[20]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[21]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[22]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[23]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[24]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[25]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[26]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[27]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[28]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[29]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[30]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "EXECUTE:PIP3|ulaMIPS:ULA|Z[31]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "DECODE:PIP2|ID_EX:IDEX|instrAUX[11]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "DECODE:PIP2|ID_EX:IDEX|instrAUX[12]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "DECODE:PIP2|ID_EX:IDEX|instrAUX[13]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "DECODE:PIP2|ID_EX:IDEX|instrAUX[14]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "DECODE:PIP2|ID_EX:IDEX|instrAUX[15]" feeding internal logic into a wire
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[0]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[1]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[2]" to the node "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[3]" to the node "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[4]" to the node "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[5]" to the node "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[6]" to the node "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[7]" to the node "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[8]" to the node "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[9]" to the node "MEMDADOS:PIP4|MemDad:MEM_DADO|altsyncram:altsyncram_component|altsyncram_lnc1:auto_generated|q_a[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[10]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[10]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[11]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[11]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[12]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[12]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[13]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[13]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[14]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[14]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[15]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[15]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[16]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[16]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[17]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[17]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[18]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[18]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[19]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[19]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[20]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[20]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[21]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[21]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[22]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[22]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[23]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[23]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[24]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[24]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[25]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[25]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[26]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[26]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[27]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[27]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[28]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[28]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[29]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[29]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[30]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[30]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "EXECUTE:PIP3|EX_MEM:EXMEM|ResultULA[31]" to the node "MEMDADOS:PIP4|MEM_WB:MEMWB|ResultULA[31]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[0]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[1]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[2]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[2]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[3]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[3]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[4]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[5]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[6]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[7]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[8]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[8]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[9]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[9]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[10]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[10]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[11]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[11]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[12]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[12]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[13]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[13]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[14]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[14]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[15]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[15]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[16]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[16]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[17]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[17]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[18]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[18]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[19]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[19]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[20]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[20]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[21]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[21]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[22]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[22]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[23]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[23]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[24]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[24]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[25]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[25]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[26]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[26]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[27]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[27]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[28]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[28]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[29]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[29]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[30]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[30]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida1[31]" to the node "EXECUTE:PIP3|MUX_2:MUX1|S[31]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[0]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[1]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[2]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[2]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[3]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[3]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[4]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[5]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[6]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[7]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[8]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[8]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[9]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[9]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[10]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[10]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[11]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[11]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[12]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[12]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[13]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[13]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[14]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[14]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[15]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[15]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[16]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[16]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[17]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[17]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[18]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[18]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[19]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[19]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[20]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[20]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[21]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[21]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[22]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[22]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[23]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[23]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[24]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[24]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[25]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[25]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[26]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[26]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[27]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[27]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[28]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[28]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[29]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[29]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[30]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[30]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|saida2[31]" to the node "EXECUTE:PIP3|EX_MEM:EXMEM|wrtData[31]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|instrAUX[16]" to the node "EXECUTE:PIP3|MUX_5bits:MUXRegDst|S[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|instrAUX[17]" to the node "EXECUTE:PIP3|MUX_5bits:MUXRegDst|S[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|instrAUX[18]" to the node "EXECUTE:PIP3|MUX_5bits:MUXRegDst|S[2]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|instrAUX[19]" to the node "EXECUTE:PIP3|MUX_5bits:MUXRegDst|S[3]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "DECODE:PIP2|ID_EX:IDEX|instrAUX[20]" to the node "EXECUTE:PIP3|MUX_5bits:MUXRegDst|S[4]" into an OR gate
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "s7seg0[7]" is stuck at VCC
+    Warning (13410): Pin "s7seg1[7]" is stuck at VCC
+    Warning (13410): Pin "s7seg2[7]" is stuck at VCC
+    Warning (13410): Pin "s7seg3[7]" is stuck at VCC
+    Warning (13410): Pin "s7seg4[7]" is stuck at VCC
+    Warning (13410): Pin "s7seg5[7]" is stuck at VCC
+    Warning (13410): Pin "s7seg6[7]" is stuck at VCC
+    Warning (13410): Pin "s7seg7[7]" is stuck at VCC
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 4817 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 271 output pins
+    Info (21061): Implemented 4477 logic cells
+    Info (21064): Implemented 64 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 189 warnings
+    Info: Peak virtual memory: 560 megabytes
+    Info: Processing ended: Wed Jul 06 20:59:10 2016
+    Info: Elapsed time: 00:00:33
+    Info: Total CPU time (on all processors): 00:00:32
+
+
